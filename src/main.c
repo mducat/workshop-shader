@@ -59,6 +59,7 @@ void free_shader(shader_t *sh)
     sfShader_destroy(sh->shader);
     sfTexture_destroy(sh->tex);
     sfTexture_destroy(sh->sampler);
+    sfClock_destroy(sh->clock);
     free(sh->state);
 }
 
